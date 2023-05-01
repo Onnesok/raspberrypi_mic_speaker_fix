@@ -73,6 +73,35 @@ card 1: Microphone [USB Microphone], device 0: USB Audio [USB Audio]
   ```
   
   <p> Based on the output usb microphone is there as Card 1 and Device 0 (“hw:1,0”) </p>
+  
+  <p>Now let's change or create file to fix that</p>
+  
+  ```
+  sudo nano home/pi/.asoundrc
+  
+  ```
+  
+  
+ <p>now use the given code in repository and you're done</p>
+ 
+ 
+ ## Test if it works
+ 
+ Record
+ 
+ ```
+ 
+ arecord -f S16_LE -r 48000 onnesok.wav
+ 
+ ```
+ play
+ 
+ ```
+ aplay onnesok.wav
+ 
+ ```
+
+ok fixed 
 
 <hr/>
   
